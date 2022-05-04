@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// MESSAGING IN JS
+
+			// alert("Hello Sarpong");
+			// prompt("Enter your name: ");
+			// console.log("Hello world");
+
+			// VARIABLES
+
+			/* var ikofi;
+			ikofi = 1200;
+			alert(ikofi); */
+
+			/* let name = "Sarpong";
+			name = "Issa";
+			console.log(name); */
+
+			/* const pi = 3;
+			console.log("PI, ", pi); */
+
+			// DATA TYPES
+
+			// const name = `Michel`;
+			// const name = "Michel";
+			// const name = 'Michel';
+
+			// const name = "Michel";
+
+			// console.log("My name is " + name);
+			// console.log("My name is ", name);
+			// console.log(`My name is ${name}`);
+
+			// const amOld = 22 >= 18;
+			// console.log("I am old: ", amOld);
+
+			/* const name = "Issa" === "Michel";
+			console.log("I am Issa: ", name); */
+
+			// console.log(typeof true);
+
+			// TYPE CONVERSION
+
+			// const money = "1250";
+			// console.log(money + 100);
+
+			// let money = 12000;
+			// console.log(typeof String(money));
+
+			/* const credit = 1200000;
+			const balance = 120;
+
+			const total = credit + balance;
+
+			console.log(total); */
+
+			// let iterate = 8;
+			// iterate = iterate + 1;
+			// iterate += 1;
+			// iterate = -iterate;
+			// console.log(iterate);
+
+			// const square = 16 ** (1 / 2);
+			// console.log("SQUARE ROOT: ", square);
+
+			// CONDITIONS
+
+			// const name = prompt("Your name: ");
+			/* if (name === "Michel") {
+				console.log("Welcome to Muheto's house");
+			}
+			if (name === "Fabrice") {
+				console.log("You are also welcome, Fab");
+			} else {
+				console.log("You are not my husband");
+			} */
+
+			/* if (name === "Michel") {
+				console.log("Welcome to Muheto's house");
+			} else if (name === "Fabrice") {
+				console.log("You are also welcome, Fab");
+			} else {
+				console.log("You are not my husband");
+			} */
+
+			/* if (name !== "Michel") {
+				console.log("You are not welcome");
+			} else {
+				console.log("Welcome to Muheto's house");
+			} */
+
+			/* const age = prompt("Enter your age: ");
+
+			if (age < 18) {
+				console.log("Not mature");
+			} else {
+				console.log("Mature");
+			} */
+
+			// TERNARY OPERATORS
+
+			/* const age = prompt("Age");
+			const isAllowed = age > 18 ? true : false;
+
+			if (isAllowed) {
+				console.log("Allowed");
+			} else {
+				console.log("Not allowed");
+			} */
+
+			/* const day = +prompt("Enter day name: ");
+			const dayName =
+				day === 1
+					? "Monday"
+					: day === 2
+					? "Tuesday"
+					: day === 3
+					? "Wednesday"
+					: "Unknown day";
+
+			console.log("Day: ", dayName); */
+
+			/* if (day === 1) {
+				console.log("Monday");
+			} else if (day === 2) {
+				console.log("Tuesday");
+			} else if (day === 3) {
+				console.log("Wednesday");
+			} */
+
+			// FALSY VALUES
+			// undefined, null, false, 0 and empty string;
+
+			// if ("") {
+			// 	alert("Hello Michel");
+			// } else {
+			// 	alert("Nothing will happen");
+			// }
+
+			// LOGICAL OPERATORS - AND (&&), OR (||), NOT (!), NULLISH Coalescing (??);
+
+			// const name = prompt("Enter name: ");
+			// const age = +prompt("Enter age: ");
+
+			/* if (name === "Fabrice" || name === "Michel") {
+				console.log("Welcome to Muheto");
+			} else {
+				console.log("We have no idea who you are");
+			} */
+
+			/* if (name === "Michel" && age === 12) {
+				console.log("You are welcome to Muheto's");
+			} else {
+				console.log("We have no idea who are.");
+			} */
+
+			// LOOPS
+
+			/* const names = [
+				"Michel",
+				"Fabrice",
+				"Sarpong",
+				"Balinda",
+				"Mugume",
+				"Issa",
+			]; */
+
+			// console.log("Name: ", names[names.length - 1]);
+			// for (let i = 0; i < names.length; i++) {
+			// 	console.log("NAME: ", names[i]);
+			// }
+
+			// let i = 0;
+
+			// while (i < names.length) {
+			// 	console.log("NAME: ", names[i]);
+			// 	i++;
+
+			// 	if (i === 3) break;
+			// }
+
+			// 	do {
+			// 		console.log("NAME: ", names[i]);
+			// 		i++;
+			// 	} while (i < names.length);
+			//
+
+			// const day = +prompt("Enter day: ");
+
+			// switch (day) {
+			// 	case 1:
+			// 		console.log("Monday");
+			// 		break;
+
+			// 	case 2:
+			// 		console.log("Tuesday");
+			// 		break;
+
+			// 	case 3:
+			// 		console.log("Wednesday");
+			// 		break;
+
+			// 	default:
+			// 		console.log("Undknown day");
+			// 		break;
+			// }
+
+			/* const day = +prompt("Enter day: ");
+			const dayNames = [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday",
+			]; */
+
+			/* for (let i = 0; i < dayNames.length; i++) {
+				// console.log("LOOPING THROUGH: ", dayNames[i]);
+
+				// console.log("INDEX: ", dayNames.indexOf(dayNames[i]));
+				// console.log("ENTERED DAY: ", day - 1);
+
+				if (dayNames.indexOf(dayNames[i]) === day - 1) console.log(dayNames[i]);
+			} */
+
+			// FUNCTIONS
+
+			/* function l(text) {
+				console.log(text);
+			}
+
+			l("Hello world");
+
+			l("Michel is not a good guy"); */
+
+			/* const helloWorld = (name) => {
+				if (name === "Sarpong") {
+					return "I am a good boy";
+				} else {
+					return "I am a bad boy";
+				}
+			}; */
+
+			/* const helloWorld = (name) => {
+				if (name === "Sarpong") {
+					return "I am a good boy";
+				}
+
+				return "I am a bad boy";
+			};
+
+			const functionCall = helloWorld();
+			console.log(functionCall); */
+
+			/* Parameter are variables that will hold actual values the function will receive
+			Whereas arguments are the actual values the function receives */
+
+			/* const calculate = (num1, num2, num3) => {
+				const sum = num1 + num2 + num3;
+				console.log("Sum = ", sum);
+			};
+
+			calculate(10, 10, 10); */
+
+			/* const calculate = (...arguments) => {
+				let sum = 0;
+				for (let i = 0; i < arguments.length; i++) {
+					sum += arguments[i];
+				}
+				console.log("SUM: ", sum);
+			};
+
+			calculate(1, 2, 3, 4, 5, 6, 6, 7); */
+
+			// CALLBCK FUNCTIONS
+			/* const messages = (access) => {
+				if (access === "Manager") {
+					return "Welcome Gitifu";
+				} else if (access === "Chief") {
+					return "Welcome Boss";
+				}
+
+				return "We have no idea who are";
+			};
+
+			const accessCheck = (name) => {
+				if (name === "Michel") {
+					return messages("Manager");
+				} else if (name === "Balinda") {
+					return messages("Chief");
+				}
+
+				returnmessages("We don't know");
+			};
+
+			console.log(accessCheck("Balinda")); */
+		</script>
+	</body>
+</html>
