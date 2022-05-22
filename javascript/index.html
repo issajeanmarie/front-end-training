@@ -304,6 +304,91 @@
 			};
 
 			console.log(accessCheck("Balinda")); */
+
+			/* const ADMIN = "ADMIN";
+			const SUPER_ADMIN = "SUPER_ADMIN";
+
+			function loginCheck(password, userType) {
+				if (userType && password === "12345") {
+					return "Access granted";
+				}
+
+				return "Access denied";
+			}
+
+			function isUserTypeAvailable() {
+				const type = prompt("ENTER USER TYPE: ");
+
+				if (type === ADMIN || type === SUPER_ADMIN) return true;
+
+				return false;
+			}
+
+			const result = loginCheck("12345", isUserTypeAvailable());
+			console.log("RESULT: ", result); */
+
+			//jJAVASCRIPT SPECIALS
+
+			// FOREACH
+
+			// const people = ["Fab", "Michel", "Balinda", "Muheto"];
+
+			/* people.forEach(function (person) {
+				return console.log(person);
+			}); */
+
+			// people.forEach((person) => console.log(person));
+
+			// MAP
+			// people.map((person) => console.log(person));
+
+			// MAP
+			// people.filter((person) => person !== "Muheto" && console.log(person));
+
+			const car = {
+				color: "Blue",
+				drivingWheel: "BMW34",
+				lights: "Back lights",
+				mark: "BMW",
+				move: () => "I AM MOVING...",
+			};
+
+			const people = [
+				{
+					name: "Issa",
+					age: 22,
+					hegiht: 1.85,
+					children: [{ name: "Kabera" }, { name: "Kaberuka" }],
+				},
+
+				{
+					name: "Michel",
+					age: 28,
+					hegiht: 2,
+					children: [
+						{ name: "King", age: 5 },
+						{ name: "Kingless", age: 2 },
+					],
+				},
+
+				{
+					name: "Balinda",
+					age: 20,
+					children: [],
+					hegiht: 2,
+				},
+			];
+
+			people.forEach((person) => {
+				person.children.forEach((child) => {
+					delete child.name;
+					console.log(child.name);
+				});
+			});
+
+			for (let i in people) {
+				console.log(people[i]);
+			}
 		</script>
 	</body>
 </html>
