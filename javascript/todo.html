@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todo app</title>
+		<style>
+			body {
+				height: 100vh;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-family: Helvetica, sans-serif;
+				box-sizing: border-box;
+			}
+
+			.todo_cont {
+				background-color: aliceblue;
+				width: 30%;
+				height: fit-content;
+				border-radius: 4px;
+				border: 1px solid rgb(180, 199, 216);
+			}
+
+			.header {
+				padding: 12px;
+				border-bottom: 1px solid rgb(180, 199, 216);
+				text-align: center;
+				font-size: 24px;
+				font-weight: 700;
+			}
+
+			.body {
+				padding: 32px;
+				width: 100%;
+				display: flex;
+				align-items: center;
+				margin: 12px auto;
+			}
+
+			input {
+				height: 42px;
+				width: 60%;
+				border: 1px solid rgb(180, 199, 216);
+				background-color: #ffff;
+				outline: none;
+				padding: 0 12px;
+			}
+
+			button {
+				height: 42px;
+				width: 20%;
+				cursor: pointer;
+				border: 1px solid rgb(180, 199, 216);
+				background-color: #000;
+				color: #ffff;
+				margin-left: 5px;
+			}
+
+			.todos {
+				width: 90%;
+				margin: 0 auto;
+				padding: 12px;
+				border: 1px solid rgb(180, 199, 216);
+			}
+
+			.one_todo {
+				background-color: white;
+				border: 1px solid rgb(235, 235, 235);
+				padding: 6px;
+				font-size: 12px;
+				margin: 6px auto;
+				display: flex;
+				align-items: center;
+				column-gap: 12px;
+				border-radius: 4px;
+			}
+
+			.num {
+				background-color: black;
+				color: white;
+				border-radius: 50%;
+				width: 20px;
+				height: 20px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.footer {
+				text-align: center;
+				font-size: 8px;
+				color: rgb(82, 82, 82);
+				padding: 12px;
+				margin-top: 64px;
+			}
+
+			.error {
+				color: maroon;
+				text-align: center;
+				font-size: 14px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="todo_cont">
+			<div class="header">TO-DO LIST</div>
+			<div class="body">
+				<input type="text" placeholder="type..." autofocus />
+				<button>Add</button>
+			</div>
+
+			<div class="todos">
+				<p class="error">Nothing here just like your crush's inbox!</p>
+			</div>
+			<div class="footer">We are awesome!!!</div>
+		</div>
+
+		<script src="./javascript.js" />
+	</body>
+</html>
