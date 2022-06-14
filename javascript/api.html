@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Web APIs</title>
+	</head>
+	<body>
+		<button>Go back</button>
+	</body>
+
+	<script>
+		localStorage.setItem("PROPERTY", "VALUE IS NOT STATED");
+
+		localStorage.setItem("NAME OF LOCAL DATA", 243546764534);
+		localStorage.removeItem("NAME OF LOCAL DATA");
+		/* 
+		document
+			.querySelector("button")
+			.addEventListener("click", () => history.go(1)); */
+
+		/* fetch("https://jsonplaceholder.typicode.com/todos/1")
+			.then((result) => result.json())
+			.then((res) => console.log(res)); */
+
+		//JSON METHODS
+		fetch("./json.json")
+			.then((result) => result.json())
+			.then((data) => {
+				//JSON STRINGIFY METHOD
+				localStorage.setItem("API-DATA", JSON.stringify(data));
+			});
+
+		const localData = localStorage.getItem("API-DATA");
+		//JSON PARSE METHOD
+		console.log(JSON.parse(localData));
+
+		// ##### HOMEWORK
+		// Fetch as it is done above, but replace './json.json' link with this one:
+		// https://jsonplaceholder.typicode.com/todos/1
+		// And then console the data you received.
+	</script>
+</html>
